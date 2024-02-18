@@ -1,0 +1,63 @@
+/* CSS for Book Tile Component */
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh auto;
+    padding: 5vw;
+}
+
+.book-tile {
+    margin: 2vw;
+    width: 250px;
+    height: 42vh;
+    background-color: rgb(245, 245, 245);
+    border-radius: 1vw;
+    padding: 0.5vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+.book-tile:hover {
+    transform: translateY(-3px) scale(1.02); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+}
+
+.rate {
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    height: 30vh;
+    width: 200px;
+    padding: 0.5vw;
+}
+
+.star {
+    width: 1vw; 
+    margin: 4px;
+}
+
+
+@media all and (orientation: portrait) {
+    .books {
+        margin-top: 10vh; 
+    }
+
+    .book-tile {
+        height: 44vh;
+        margin-bottom: 8vw; 
+        font-size: 4vw;
+        padding: 4vw; 
+    }
+
+    .star {
+        width: 2vw; 
+    }
+
+    .rate {
+        font-size: 4.5vw; 
+    }
+}

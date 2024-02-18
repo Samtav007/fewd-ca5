@@ -1,0 +1,115 @@
+#root {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content:space-between;
+  padding: 1px; ;
+  background-color: rgb(255, 237, 237);
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  margin: 0;
+}
+
+.logo {
+  height: 100%;
+  font-size: 6vw; /* Increased font size for the logo */
+  cursor: pointer;
+  color: black;
+  width: 15vw;
+}
+
+.register {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  height: 6vh;
+  line-height: 6vh;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  margin: auto; /* Center the registration button */
+}
+
+input {
+  font-size: 1vw;
+  width: 25vw;
+  height: 6vh;
+}
+
+.Input {
+  justify-content: center;
+  display: flex;
+}
+
+.search {
+  height: 4vh;
+  width: 2vw;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  margin-top: 24vh;
+}
+
+footer p {
+  margin: 2vw;
+}
+
+.info {
+  color: goldenrod;
+}
+
+@media all and (orientation: portrait) {
+  .register {
+    font-size: 4vw;
+    padding: 0.5vw;
+    width: 20vw;
+    margin-top: 2vw;
+  }
+
+  .searchBtn {
+    height: 5vh;
+    width: 10vw;
+    padding: 1vw;
+    margin-top: 4vw;
+  }
+
+  input {
+    font-size: 4vw;
+    height: 5vh;
+    margin-top: 4vw;
+  }
+
+  .logo {
+    width: 20vw;
+    font-size: 8vw; /* Increased font size for the logo in portrait mode */
+  }
+
+  .info {
+    font-size: 4.5vw;
+  }
+
+  .search {
+    width: 6vw;
+    height: 3vh;
+  }
+
+  footer {
+    margin-top: 30vh;
+    height: 10vh;
+  }
+}
